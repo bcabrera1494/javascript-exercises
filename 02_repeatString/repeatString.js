@@ -14,7 +14,7 @@ console.log(repeatString ('hello',10));
 console.log(repeatString('hi',1));
 console.log(repeatString('bye', 0));
 console.log(repeatString('goodbye',-1));
-
-
+let num = Number;
+console.log(repeatString('hey',num));
 // Do not edit below this line
 module.exports = repeatString;
