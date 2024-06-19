@@ -6,7 +6,7 @@ let reverseArray = [];
     reverseArray.push(stringArray[i]);
     }
 console.log(reverseArray);
-let reverseArrayString = reverseArray.toString();
+let reverseArrayString = reverseArray.join("");
 return reverseArrayString;
 };
 
