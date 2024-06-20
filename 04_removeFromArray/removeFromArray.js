@@ -8,5 +8,6 @@ const removeFromArray = function(arr, removeValue, ...alsoRemove) {
 }
 console.log(removeFromArray([1,2,3,4], (3)));
 console.log(removeFromArray([1,2,3,4], 3, 2));
+console.log(removeFromArray([1,2,2,3], 2));
 // Do not edit below this line
 module.exports = removeFromArray;
