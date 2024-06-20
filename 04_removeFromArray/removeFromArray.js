@@ -1,8 +1,9 @@
-const removeFromArray = function(arr, remove) {
-let removeSingleValue = arr.splice(remove);
-return removeSingleValue;
-};
-console.log(removeFromArray([1, 2, 3, 4], 3));
+const removeFromArray = function(arr, removeValue) {
+    const index = arr.indexOf(removeValue);
+    const remove = arr.splice(index, 1);
+    return arr
+}
+console.log(removeFromArray([1,2,3,4], (3)));
 
 // Do not edit below this line
 module.exports = removeFromArray;
