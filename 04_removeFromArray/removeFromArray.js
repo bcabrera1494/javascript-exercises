@@ -1,4 +1,4 @@
-const removeFromArray = function(arr, removeValue, ...theArgs) {
+const removeFromArray = function(arr, removeValue, ...alsoRemove) {
     const index = arr.indexOf(removeValue);
     const remove = arr.splice(index, 1);
     return arr
