@@ -4,19 +4,21 @@ const removeFromArray = function(arr, removeValue, ...alsoRemove) {
         };
 
     let checkRemoveValue = arr.includes(removeValue);
-    let checkAlsoRemove = arr.includes(alsoRemove);
 
- if (checkRemoveValue === false) {
-     checkAlsoRemove;
-     if (checkAlsoRemove === false){
-            return arr;
-        }    
-        return arr
-    }
+ if (checkRemoveValue === false) {    
+        return arr}
  else {
      const newArray = arr.filter(removeValues);
      return newArray;
     }     
+
+    function returnArrayFromAlsoRemove(arrValue){
+        return arrValue
+    }
+
+    let alsoRemoveLoop = alsoRemove.includes(arrValue);
+
+    
 }
 console.log(removeFromArray([1,2,3,4], 3));
 console.log(removeFromArray([1,2,3,4], 3, 2));
