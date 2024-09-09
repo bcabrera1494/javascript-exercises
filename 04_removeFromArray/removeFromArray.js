@@ -12,13 +12,12 @@ const removeFromArray = function(arr, removeValue, ...alsoRemove) {
      return newArray;
     }     
 
+   
     function returnArrayFromAlsoRemove(arrValue){
         return arrValue
-    }
+    } 
 
     let alsoRemoveLoop = alsoRemove.includes(arrValue);
-
-    
 }
 console.log(removeFromArray([1,2,3,4], 3));
 console.log(removeFromArray([1,2,3,4], 3, 2));
