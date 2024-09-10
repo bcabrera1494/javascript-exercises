@@ -1,4 +1,4 @@
-const removeFromArray = function(arr, removeValue, ...alsoRemove) {
+const removeFromArray = function(arr, ...removeValues) { //changed the parameter so that ALL values are included in the array of rest parameters
     
     //function that checks if removeValue is in arr, finds its index, splices it out, returns the edited array
     checkAndRemove(removeValue);
