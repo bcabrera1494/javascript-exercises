@@ -1,39 +1,74 @@
 const removeFromArray = function(arr, ...removeValues) { //changed the parameter so that ALL values are included in the array of rest parameters
-    
-    //function that checks if removeValue is in arr, finds its index, splices it out, returns the edited array
-    checkAndRemove(removeValue);
+    //Create a function that returns the index of an element value ***maybe this is unnecessary?
+    //Parameters to pass through: array, index
+    /*function indexOfValue (array, element){
+        let index = array.indexOf(element);
+        return index;
+    }*/
 
-    function checkAndRemove(value){
-        //checks if removeValue matches any elements of arr
-        let checkInclusion = arr.includes(value);
-        
-        //finds the index of removeValue
-        let index = arr.indexOf(value);
+    //Create a function that returns the value of an element, given its index
+    //Paremeters to pass through: array, index
+    function valueOfElement (array, index){
+        let element = array[index];
+        return element; //result should return the value (a number)
+    }
+    let arrOne = valueOfElement (arr, 0);
+    let arrTwo = valueOfElement (arr, 1);
+    let arrThree = valueOfElement (arr, 2);
+    let arrFour = valueOfElement (arr, 3);
 
-        //splices removeValue out of arr
-        const splicedArray = arr.toSpliced(index, 1);
-        
-        if (checkInclusion === true) { 
-        return splicedArray; //why does this still return undefined even if the variable is defined
-        };
-    };
+    //Create a function that checks if an element value is included in an array
+    //Parameters to pass through: array, element
+    function checkRemoveValues (array, element){
+        let check = array.includes(element);
+        return check; //result will be true or false
+    }
+    checkRemoveValues (removeValues, arrOne);
+        if (checkRemoveValues === true) {
+            spliceArray()
+        }
+    checkRemoveValues (removeValues, arrTwo);
+    checkRemoveValues (removeValues, arrThree);
+    checkRemoveValues (removeValues, arrFour);
 
-};
+    //Create a function that splices an element from the array and returns the edited array 
+    function spliceArray (array,index){
+        let splice = array.toSpliced(index,1);
+        splice;
+        return array; //result should return edited array
+    }
+    //Create a loop that runs valueOfElement and checkRemoveValues on each element in the array
+    for (element of removeValues) {
+        valueOfElement(arr, 0);
+        checkRemoveValues();
+        //Write conditional statement that runs spliceArray if the checkRemoveValues is true 
+        if (checkRemoveValues === true) {
+            spliceArray(arr,0);
+            arr;
+        }
+        valueOfElement (arr, 1);
+        checkRemoveValues();
+        if (checkRemoveValues === true) {
+            spliceArray(arr, 1);
+            arr;
+        }
+        valueOfElement (arr, 2);
+        checkRemoveValues();
+        if (checkRemoveValues === true) {
+            spliceArray(arr, 2);
+            arr;
+        }
+        valueOfElement (arr, 3);
+        checkRemoveValues();
+        if (checkRemoveValues === true) {
+            spliceArray(arr, 3);
+            return arr;
+        }
+        else 
+            return arr;  
+    }
 
-   /* function compareValues(){
-        for (const value of alsoRemove) {
-            //check if the current value is included in the newArray
-            let checkValue = newArray.includes(value);
-            //conditional statement that filters the current value OUT of newArray to return and updated array.
-            //aka arrayEdit
-            if (checkValue === true) {
-                let arrayEdit = newArray.filter(value);
-                return arrayEdit}
-            };
-            //Now the loop should restart and iterate over the next iterable and repeat until all iterables have
-            //been iterated through the loop.
-    };
-    compareValues(alsoRemove);*/
+}; 
 
 
 console.log(removeFromArray([1,2,3,4], 3));
