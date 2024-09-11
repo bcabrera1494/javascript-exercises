@@ -1,6 +1,6 @@
 const removeFromArray = function(arr, ...removeValues) {
-    let editArray = [arr];
-    let removeArray = [...removeValues];
+    let editArray = [arr]; 
+    let removeArray = [...removeValues]; 
 
     //Create a function that filters elements of removeValues that return "false" from checkAndRemoveValues
     function filterArray (array){
