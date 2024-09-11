@@ -2,20 +2,19 @@ const removeFromArray = function(arr, ...removeValues) {
     let editArray = [arr]; 
     let removeArray = [...removeValues]; 
 
-    //Create a function that filters elements of removeValues that return "false" from checkAndRemoveValues
+    function checkValues (array, element){
+        let check = array.includes(element);
+        return check === false;
+        };
+    
     function filterArray (array){
         let newArray = array.filter(checkValues);
          //result should return edited array without the "false" elements
         return newArray;
     }
 
-    //Create a function that checks if an element value is included in an array
-    function checkValues (array, element){
-        let check = array.includes(element);
-        return check === false;
-        };
-    
-/*    for (let value of removeArray){
+/*    this should loop through each element of removeArray
+        for (let value of removeArray){
         checkValues(editArray, value);
         filterArray(editArray, value);
     }*/
