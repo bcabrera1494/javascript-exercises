@@ -1,6 +1,6 @@
 const removeFromArray = function(arr, ...removeValues) {
-    let editArray = [arr]; 
-    let removeArray = [...removeValues]; 
+    let editArray = Array.from(arr); 
+    let removeArray = Array.from(removeValues);
 
     function checkValues (array, element){
         let check = array.includes(element);
