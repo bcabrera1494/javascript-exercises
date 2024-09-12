@@ -2,11 +2,12 @@ const removeFromArray = function(arr, ...removeValues) {
     let editArray = Array.from(arr); 
     let removeArray = Array.from(removeValues);
 
-    function checkValues (array, element){
-        let check = array.includes(element);
-        return check === false;
-        };
-    
+    const removeArray = Array.from(removeValues);
+
+    function checkValue (editElement, removeElement){     
+        editElement === removeElement;
+    };
+
     function filterArray (array){
         let newArray = array.filter(checkValues);
          //result should return edited array without the "false" elements
