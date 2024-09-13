@@ -1,26 +1,44 @@
 const removeFromArray = function(arr, ...removeValues) {
-    let editArray = Array.from(arr); 
-    let removeArray = Array.from(removeValues);
-
+    const editArray = Array.from(arr);
     const removeArray = Array.from(removeValues);
 
-    function checkValue (editElement, removeElement){     
-        editElement === removeElement;
+    //Function that compares an element from editArray and removeArray
+    //Return the elements not equal to the removElement
+    function checkValue (removeElement, editElement){     
+        if (removeElement !== editElement){
+            return true;
+        };
+        if (removeElement === editElement){
+            return false;
+        }
     };
 
-    function filterArray (array){
-        let newArray = array.filter(checkValues);
-         //result should return edited array without the "false" elements
+    //Function that filters array, calls checkValue
+    //returns newArray
+    function filterArray (currentValue){
+        let newArray = editArray.filter(checkValue, currentValue);
         return newArray;
     }
 
-/*    this should loop through each element of removeArray
-        for (let value of removeArray){
-        checkValues(editArray, value);
-        filterArray(editArray, value);
-    }*/
+    //Loop iterates over each value of removeArray
+    //returns value of each element in removeArray
+   for (const remove of removeArray){
+        const removeValue = remove;
+        removeValue;
+        //Loop nested within iteration over removeArray that runs checkIncludes to compare each element of editArray w/ remove
+        //returns true or false for each iteration
+        for(const element of editArray){
+            const editElement = element; 
+            let check = checkValue(removeValue, editElement);
+            check;
+            //return filterArray function should return newArray
+            if (check = false){
+                return filterArray(element);
+            } 
+        };
+    };
 
-}; 
+};
 
 console.log(removeFromArray([1,2,3,4], 3));
 console.log(removeFromArray([1,2,3,4], 3, 2));
