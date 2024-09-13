@@ -6,10 +6,10 @@ const removeFromArray = function(arr, ...removeValues) {
     //Return the elements not equal to the removElement
     function checkValue (removeElement, editElement){     
         if (removeElement !== editElement){
-            return true;
+            return true; 
         };
         if (removeElement === editElement){
-            return false;
+            return false; 
         }
     };
 
