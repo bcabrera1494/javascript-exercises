@@ -16,7 +16,7 @@ const removeFromArray = function(arr, ...removeValues) {
 //use for loop ONLY w/ getValue to simplify code for same results
         //write for...loop that uses removeItems until the length
         //of removeArray is completed
-        for (let i = 0; i < removeArray.length; i++){
+    for (let i = 0; i < removeArray.length; i++){
         removeItems (editArray, remove);
         }; 
         if (includes > 4 
