@@ -17,27 +17,14 @@ const removeFromArray = function(arr, ...removeValues) {
         switch (newArray) {
 
             case 1:
-                //removeArray contains numbers that are present in editArray
+                //removeArray contains values that are present in editArray
 
             case 2:
-                //removeArray contains numbers and strings
+                //removeArray contains values (num/str) not present in editArray
+                
             case 3: 
-                //removeArray.length = 3
-            case 4:
-                //removeArray.length = 4
+                //removeArray contains a combination of num/str that are present/not present in editArray
         }
-
-        if 1: (removeArray.length > 1 &&
-            removeArray.length <= 4
-        ){
-            let newArray = removeItems(editArray, remove);
-            newArray;
-            break;
-        };
-        if (removeArray.length === editArray.length){
-            remove;
-            return removeItems(editArray, remove);
-        };
     }; 
 };
 console.log(removeFromArray([1,2,3,4], 3));
