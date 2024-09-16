@@ -8,12 +8,12 @@ const removeFromArray = function(arr, ...removeValues) {
     function removeItems (array, valuetoRemove){
         return array.filter(item => item !== valuetoRemove)
     }
-
-    //Loop iterates over each value of removeArray
-    //returns value of each element in removeArray
-   for (const remove of removeArray){
-        remove;
-        let includes = editArray.includes(remove);
+    //write function to get value of each item in removeArray
+    function getValue (array, index) {
+        let value = array[index];
+        return value;
+    };
+//use for loop ONLY w/ getValue to simplify code for same results
         //write for...loop that uses removeItems until the length
         //of removeArray is completed
         for (let i = 0; i < removeArray.length; i++){
