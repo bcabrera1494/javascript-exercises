@@ -17,15 +17,11 @@ const removeFromArray = function(arr, ...removeValues) {
         //write for...loop that uses removeItems until the length
         //of removeArray is completed
     for (let i = 0; i < removeArray.length; i++){
-        removeItems (editArray, remove);
-        }; 
-        if (includes > 4 
-            || typeof(includes) === String 
-        ){ 
-            continue; 
-        } 
-    return removeItems(editArray, remove);
-    };
+        //declare variable for getValue so that it can be accessed in removeItems.
+        let remove = getValue(removeArray, i);
+        remove;
+        return removeItems (editArray, remove);
+    }; 
 };
 console.log(removeFromArray([1,2,3,4], 3));
 console.log(removeFromArray([1,2,3,4], 3, 2));
