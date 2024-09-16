@@ -15,9 +15,8 @@ const removeFromArray = function(arr, ...removeValues) {
 
     //Function that filters array, calls checkValue
     //returns newArray
-    function filterArray (currentValue){
-        let newArray = editArray.filter(checkValue, currentValue);
-        return newArray;
+    function removeItems (array, valuetoRemove){
+        return array.filter(item => item !== valuetoRemove)
     }
 
     //Loop iterates over each value of removeArray
