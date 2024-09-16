@@ -19,11 +19,11 @@ const removeFromArray = function(arr, ...removeValues) {
         for (let i = 0; i < removeArray.length; i++){
         removeItems (editArray, remove);
         }; 
-        if (includes > 4
-            || typeof(includes) === String
-        ){
-            continue;
-        }
+        if (includes > 4 
+            || typeof(includes) === String 
+        ){ 
+            continue; 
+        } 
     return removeItems(editArray, remove);
     };
 };
