@@ -2,25 +2,28 @@ const removeFromArray = function(arr, ...removeValues) {
     const editArray = Array.from(arr);
     const removeArray = Array.from(removeValues);
 
-    //Function that filters array items by returning only the values that do NOT
-    //match the value to remove
-    //returns edited Array
     function removeItems (array, valuetoRemove){
         return array.filter(item => item !== valuetoRemove)
     }
-    //write function to get value of each item in removeArray
     function getValue (array, index) {
         let value = array[index];
         return value;
     };
-//use for loop ONLY w/ getValue to simplify code for same results
-        //write for...loop that uses removeItems until the length
-        //of removeArray is completed
-    for (let i = 0; i < removeArray.length; i++){
-        //declare variable for getValue so that it can be accessed in removeItems.
+
+    for (let i = 0; i <= removeArray.length; i++){
         let remove = getValue(removeArray, i);
         remove;
-        return removeItems (editArray, remove);
+        if (removeArray.length > 1 &&
+            removeArray.length <= 4
+        ){
+            let newArray = removeItems(editArray, remove);
+            newArray;
+            break;
+        };
+        if (removeArray.length > 1){
+            remove;
+            return removeItems(editArray, remove);
+        };
     }; 
 };
 console.log(removeFromArray([1,2,3,4], 3));
