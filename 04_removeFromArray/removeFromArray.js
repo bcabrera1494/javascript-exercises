@@ -13,8 +13,9 @@ const removeFromArray = function(arr, ...removeValues) {
         }
     };
 
-    //Function that filters array, calls checkValue
-    //returns newArray
+    //Function that filters array items by returning only the values that do NOT
+    //match the value to remove
+    //returns edited Array
     function removeItems (array, valuetoRemove){
         return array.filter(item => item !== valuetoRemove)
     }
@@ -22,22 +23,11 @@ const removeFromArray = function(arr, ...removeValues) {
     //Loop iterates over each value of removeArray
     //returns value of each element in removeArray
    for (const remove of removeArray){
-        const removeValue = remove;
-        removeValue;
-        //Loop nested within iteration over removeArray that runs checkIncludes to compare each element of editArray w/ remove
-        //returns true or false for each iteration
-        for(const element of editArray){
-            const editElement = element; 
-            let check = checkValue(removeValue, editElement);
-            check;
-            //return filterArray function should return newArray
-            if (check = false){
-                return filterArray(element);
-            } 
-        };
+        const removeElement = remove;
+        removeElement;
+        return removeItems (editArray, removeElement);
+            }; 
     };
-
-};
 
 console.log(removeFromArray([1,2,3,4], 3));
 console.log(removeFromArray([1,2,3,4], 3, 2));
