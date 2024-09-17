@@ -20,6 +20,19 @@ const removeFromArray = function(arr, ...removeValues) {
         //declare variable for getValue so that it can be accessed in removeItems.
         let remove = getValue(removeArray, i);
         remove;
+        //write conditional logic to sepcify how to proceed if remove is NOT present in editArray
+        if (editArray.includes(remove) === false){
+            continue;
+        };
+        //write conditional logic to specify how to proceed if function has not yet accessed all 
+        //removeArray elements
+        if (i < removeArray.length){
+            remove;
+            //declare variable for edit of array
+            let newArrayOne = removeItems (editArray, remove);
+            newArrayOne;
+        }
+
         return removeItems (editArray, remove);
     }; 
 };
