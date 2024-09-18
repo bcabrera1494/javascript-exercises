@@ -20,9 +20,10 @@ else {return false};
 
 };
 
-leapYears(1996);
-leapYears(1997);
-leapYears(34992);
+console.log(leapYears(1996));
+console.log(leapYears(1997));
+console.log(leapYears(34992));
+console.log(leapYears(1900));
 
 // Do not edit below this line
 module.exports = leapYears;
