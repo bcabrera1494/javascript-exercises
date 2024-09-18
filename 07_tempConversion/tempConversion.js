@@ -6,6 +6,10 @@ const convertToCelsius = function(temperature) {
 };
 
 const convertToFahrenheit = function(temperature) {
+  let convertF = ((temperature*(9/5))+32);
+  convertF;
+  let roundToNearestTenth = Math.round(convertF*10)/10;
+  return roundToNearestTenth;
 };
 
 console.log(convertToCelsius(32));
