@@ -8,6 +8,8 @@ const convertToCelsius = function(temperature) {
 const convertToFahrenheit = function(temperature) {
 };
 
+console.log(convertToCelsius(32));
+console.log(convertToCelsius(100));
 // Do not edit below this line
 module.exports = {
   convertToCelsius,
