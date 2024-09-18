@@ -20,6 +20,9 @@ const removeFromArray = function(arr, ...removeValues) {
         //declare variable for getValue so that it can be accessed in removeItems.
         let remove = getValue(removeArray, i);
         remove;
+        if (remove === undefined){
+            continue;
+        };
         //declare variable for edit of array
         const newArray = removeItems(editArray, remove);
         //write conditional logic to sepcify how to proceed if remove is NOT present in editArray
