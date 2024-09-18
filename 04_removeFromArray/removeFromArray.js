@@ -13,6 +13,9 @@ const removeFromArray = function(arr, ...removeValues) {
     for (let i = 0; i <= removeArray.length; i++){
         let remove = getValue(removeArray, i);
         remove;
+        if (remove === undefined){
+            continue;
+        };
         //declare variable for edit of array
         const newArray = removeItems(editArray, remove);
         //write conditional logic to sepcify how to proceed if remove is NOT present in editArray
