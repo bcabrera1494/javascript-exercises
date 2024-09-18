@@ -6,8 +6,14 @@ const sumAll = function(startValue, endValue) {
 // {sum += i} **use += to add i and reassign the resulting value to variable "sum"
 //return sum
 //use conditional statements to determine start and end value such that the end value is always greater.
+//use conditional statement to return 'ERROR' if either value is a negative integer
 
 let sum = 0
+
+if (startValue < 0
+    || endValue < 0){
+        return 'ERROR'
+    };
 
 if (startValue < endValue) {
     for (let i = startValue; i <= endValue; i++){
@@ -28,6 +34,7 @@ if (startValue > endValue) {
 console.log(sumAll(1,4));
 console.log(sumAll(1,4000));
 console.log(sumAll(123,1));
+console.log(sumAll(-10,4));
 
 // Do not edit below this line
 module.exports = sumAll;
