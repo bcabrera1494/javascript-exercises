@@ -5,8 +5,8 @@ const removeFromArray = function(arr, ...removeValues) {
     //Function that filters array items by returning only the values that do NOT
     //match the value to remove
     //returns edited Array
-    function removeItems (array, valuetoRemove){
-        return array.filter(item => item !== valuetoRemove)
+    function removeItems (array){
+        return array.filter(item => removeArray.includes(item) === false);
     }
     //write function to get value of each item in removeArray
     function getValue (array, index) {
