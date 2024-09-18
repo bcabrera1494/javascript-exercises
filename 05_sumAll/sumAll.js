@@ -8,6 +8,7 @@ const sumAll = function(startValue, endValue) {
 //use conditional statements to determine start and end value such that the end value is always greater.
 //use conditional statement to return 'ERROR' if either value is a negative integer
 //use Number.is integer to check if parameter is integer - if false, return error
+// use is NaN() to check if parameter value is not a number 
 
 let sum = 0
 
