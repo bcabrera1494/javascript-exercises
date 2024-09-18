@@ -7,12 +7,18 @@ let checkFour = year % 4;
 let checkFourHundred = year % 400;
 let checkOneHundred = year % 100;
 
+if (checkOneHundred === 0
+    && checkFourHundred !== 0){
+        return false;
+    };
+
 if(checkFour === 0){
     return true;
 };
 
-if(checkOneHundred === 0
-    && checkFourHundred === 0){
+if(checkFourHundred === 0
+    && checkOneHundred === 0
+    && checkFour === 0){
     return true
  }
 
