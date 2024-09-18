@@ -8,10 +8,21 @@ const sumAll = function(startValue, endValue) {
 //use conditional statements to determine start and end value such that the end value is always greater.
 
 let sum = 0
-for (let i = startValue; i <= endValue; i++){
+
+if (startValue < endValue) {
+    for (let i = startValue; i <= endValue; i++){
     sum += i
     };
-return sum;
+    return sum;
+    };
+
+if (startValue > endValue) {
+    for (let i = endValue; i <=startValue; i++){
+    sum += i
+    };
+    return sum;
+    }
+
 };
 
 console.log(sumAll(1,4));
