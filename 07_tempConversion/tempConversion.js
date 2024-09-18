@@ -2,7 +2,7 @@ const convertToCelsius = function(temperature) {
   let convert = ((temperature - 32)*(5/9));
   convert;
   let roundToNearestTenth = Math.round(convert*10)/10
-  return roundTonearestTenth;
+  return roundToNearestTenth;
 };
 
 const convertToFahrenheit = function(temperature) {
