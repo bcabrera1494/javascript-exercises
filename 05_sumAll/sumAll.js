@@ -12,7 +12,9 @@ const sumAll = function(startValue, endValue) {
 let sum = 0
 
 if (startValue < 0
-    || endValue < 0){
+    || endValue < 0
+    || Number.isInteger(startValue) === false
+    || Number.isInteger(endValue) === false){
         return 'ERROR'
     };
 
