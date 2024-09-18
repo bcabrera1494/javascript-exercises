@@ -13,6 +13,21 @@ const removeFromArray = function(arr, ...removeValues) {
     for (let i = 0; i <= removeArray.length; i++){
         let remove = getValue(removeArray, i);
         remove;
+        //declare variable for edit of array
+        const newArray = removeItems(editArray, remove);
+        //write conditional logic to sepcify how to proceed if remove is NOT present in editArray
+        if (editArray.includes(remove) === false){
+            continue;
+        };
+        //write conditional logic to specify how to proceed if function has not yet accessed all 
+        //removeArray elements
+        if (i < removeArray.length){
+            remove;
+            //declare variable for edit of array
+            let newArrayOne = removeItems (editArray, remove);
+            newArrayOne;
+        }
+
         return removeItems (editArray, remove);
     }; 
 };
