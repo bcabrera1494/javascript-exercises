@@ -28,7 +28,7 @@ const removeFromArray = function(arr, ...removeValues) {
         };
         //write conditional logic to specify how to proceed if function has not yet accessed all 
         //removeArray elements
-        if (i < removeArray.length){
+        if ((i + 1) < removeArray.length){
             remove;
             //declare variable for edit of array
             let newArrayOne = removeItems (editArray, remove);
