@@ -1,7 +1,11 @@
-const convertToCelsius = function() {
+const convertToCelsius = function(temperature) {
+  let convert = ((temperature - 32)*(5/9));
+  convert;
+  let roundToNearestTenth = Math.round(convert*10)/10
+  return roundTonearestTenth;
 };
 
-const convertToFahrenheit = function() {
+const convertToFahrenheit = function(temperature) {
 };
 
 // Do not edit below this line
