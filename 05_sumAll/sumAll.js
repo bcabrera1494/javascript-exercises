@@ -7,6 +7,7 @@ const sumAll = function(startValue, endValue) {
 //return sum
 //use conditional statements to determine start and end value such that the end value is always greater.
 //use conditional statement to return 'ERROR' if either value is a negative integer
+//use Number.is integer to check if parameter is integer - if false, return error
 
 let sum = 0
 
