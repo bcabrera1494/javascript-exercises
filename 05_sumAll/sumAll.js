@@ -15,9 +15,11 @@ let sum = 0
 if (startValue < 0
     || endValue < 0
     || Number.isInteger(startValue) === false
-    || Number.isInteger(endValue) === false){
-        return 'ERROR'
-    };
+    || Number.isInteger(endValue) === false
+    || Number.isNaN(startValue) === true
+    || Number.isNaN(endValue) === true)
+    {return 'ERROR'
+        };
 
 if (startValue < endValue) {
     for (let i = startValue; i <= endValue; i++){
@@ -39,6 +41,8 @@ console.log(sumAll(1,4));
 console.log(sumAll(1,4000));
 console.log(sumAll(123,1));
 console.log(sumAll(-10,4));
+console.log(sumAll(2.4,4));
+console.log(sumAll(10,"90"));
 
 // Do not edit below this line
 module.exports = sumAll;
