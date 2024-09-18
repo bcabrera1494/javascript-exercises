@@ -1,10 +1,10 @@
 const sumAll = function(startValue, endValue) {
-//Pseudocode
-//Declare variable x = the number that is added to startValue
-//x = startValue + i
-//Use for loop to increment i
-//for (let i = 0; i + x < endValue; i++)
-//{start + (start + x)} return sum
+
+//Declare variable sum = 0 
+//Use for loop to increment i (i = the amount added to sum)
+//for (let i = 0; (condition i<= endValue) < endValue; i++)
+// {sum += i} **use += to add i and reassign the resulting value to variable "sum"
+//return sum
 
 let x = (startValue + 1);
 for (let i = 1; (i + x) < endValue; ){
