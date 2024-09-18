@@ -13,5 +13,9 @@ for (let i = startValue; i <= endValue; i++){
 return sum;
 };
 
+console.log(sumAll(1,4));
+console.log(sumAll(1,4000));
+console.log(sumAll(123,1));
+
 // Do not edit below this line
 module.exports = sumAll;
