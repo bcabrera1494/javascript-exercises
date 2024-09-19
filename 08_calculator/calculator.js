@@ -22,6 +22,9 @@ const factorial = function() {
 	
 };
 
+console.log(add(0,0));
+console.log(add(2,2));
+console.log(add(2,6));
 // Do not edit below this line
 module.exports = {
   add,
