@@ -12,8 +12,8 @@ const sum = function(array) {
   return result;
 };
 
-const multiply = function(a, b) {
-return (a*b)
+const multiply = function(array) {
+return array.reduce((product, current) => product * current, 0);
 };
 
 const power = function(a, b) {
@@ -32,6 +32,8 @@ console.log(sum([]));
 console.log(sum([7]));
 console.log(sum([7, 11]));
 console.log(sum([1, 3, 5, 7, 9]));
+console.log(multiply([2, 4]));
+console.log(multiply([2, 4, 6, 8, 10, 12, 14]));
 // Do not edit below this line
 module.exports = {
   add,
