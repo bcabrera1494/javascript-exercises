@@ -9,7 +9,7 @@ const fixPal = backwards.join("");
 //Create a new string with the reversed array
 const pal = fixPal.toString();
 //Compare the new string with the original string for equality
-if (string === fixPal) {
+if (string === pal) {
     return true;
 }
 };
