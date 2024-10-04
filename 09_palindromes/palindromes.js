@@ -6,7 +6,7 @@ const palindromes = function (string) {
     //Function to edit original string
     function editOriginal(a) {
         //Remove punctuation from original string
-        const array = a.filter(str => !str.match(/[^\w\s]/g));
+        const array = a.filter(str => !str.match(/[^\w\s]/g) && (str !== " "));
         //Join original array to string
         const origStr = array.join("");
         //Convert original string to lowercase
@@ -17,7 +17,7 @@ const palindromes = function (string) {
     //Function to edit backwards string
     function editBackwards(b) {
         //Remove punctuation
-        const puncRm = b.filter(str => !str.match(/[^\w\s]/g));
+        const puncRm = b.filter(str => !str.match(/[^\w\s]/g) && (str !== " "));
         //Reverse the array
         const backwards = puncRm.reverse();
         //Remove the , between each letter
