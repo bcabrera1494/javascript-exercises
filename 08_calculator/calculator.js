@@ -34,6 +34,7 @@ console.log(sum([7, 11]));
 console.log(sum([1, 3, 5, 7, 9]));
 console.log(multiply([2, 4]));
 console.log(multiply([2, 4, 6, 8, 10, 12, 14]));
+console.log(power(4, 3));
 // Do not edit below this line
 module.exports = {
   add,
